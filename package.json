@@ -1,0 +1,24 @@
+{
+  "name": "meethappiness.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meethappiness/meethappiness.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meethappiness/meethappiness.github.io/issues"
+  },
+  "homepage": "https://github.com/meethappiness/meethappiness.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "swiper": "^4.5.0"
+  }
+}
