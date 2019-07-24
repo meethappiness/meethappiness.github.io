@@ -25,3 +25,9 @@
     transform: scale(1.1) ;
     transition: transform 20s;
 }
+.box{
+    width: 770px;
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+}
