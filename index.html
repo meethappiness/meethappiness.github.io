@@ -10,15 +10,19 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div id="banner">
-    <div class="bannerimg" style="background-image: url(/pic/1315x1920.jpg)"></div>
+    <div class="bannerimg animated zoomIn" style="background-image: url(/pic/1315x1920.jpg)"></div>
     <!-- <img src="/pic/1315x1920.jpg" alt="" style="width: 100%"> -->
   </div>
-  <nav class="nav justify-content-center ">
+
+
+  <!-- 第一版NAVBAR HOLD -->
+  <!-- <nav class="nav justify-content-center ">
     <a class="nav-link active order-md-2 " href="#">
       <img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" style="width: 120px">
     </a>
@@ -55,9 +59,9 @@
       </li>
     </ul>
 
-    <!-- <a class="nav-link active order-sm-0 order-2" href="#">
+    <a class="nav-link active order-sm-0 order-2" href="#">
       <img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" style="width: 120px">
-    </a> -->
+    </a> 
 
     <ul class="nav justify-content-center order-3 align-items-end">
       <li class="nav-item">
@@ -91,7 +95,7 @@
         </a>
       </li>
     </ul>
-  </nav>
+  </nav> -->
 <!-- nav 第二版 -->
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container justify-content-md-center">
@@ -100,15 +104,15 @@
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <img src="/pic/logo-遇見幸福(圓形).png" alt="" width="50px">
+        <!-- <span class="navbar-toggler-icon"></span> --> <!-- 漢堡包 -->
+        <img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" width="50px"><!-- LOGO -->
       </button>
 
-      <div class="col-12 col-md-5 p-0 collapse navbar-collapse order-1" id="navbarSupportedContent">
+      <div class="col-12 col-md-5 col-lg-4 p-0 collapse navbar-collapse order-1" id="navbarSupportedContent">
         <ul class="nav mr-0">
           <li class="nav-item col-4">
             <a class="nav-link p-0" href="#">
-              <div class="col-12 col-lg-12 p-0">
+              <div class="p-0" style="max-width:70px" >
                 <img src="/pic/logo-遇見幸福(圓形).png" alt="..." width="100%">
               </div>
               <h6 class="text-center">中式料理</h6>
@@ -116,7 +120,7 @@
           </li>
           <li class="nav-item col-4">
               <a class="nav-link p-0" href="#">
-                <div class="col-12 col-lg-12 p-0">
+                <div class="p-0" style="max-width:70px">
                   <img src="/pic/logo-遇見幸福(圓形).png" alt="..." width="100%">
                 </div>
                 <h6 class="text-center">中式料理</h6>
@@ -124,7 +128,7 @@
             </li>
             <li class="nav-item col-4">
                 <a class="nav-link p-0" href="#">
-                  <div class="col-12 col-lg-12 p-0">
+                  <div class="p-0" style="max-width:70px">
                     <img src="/pic/logo-遇見幸福(圓形).png" alt="..." width="100%">
                   </div>
                   <h6 class="text-center">中式料理</h6>
@@ -135,11 +139,11 @@
       <div class="col-2 col-md-2 order-0 order-md-1">
         <a class="navbar-brand" href="#"><img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" style="width: 100%"></a>
       </div>
-      <div class="col-12 col-md-5 p-0 collapse navbar-collapse order-2" id="navbarSupportedContent">
+      <div class="col-12 col-md-5 col-lg-4 p-0 collapse navbar-collapse order-2" id="navbarSupportedContent">
           <ul class="nav mr-0">
               <li class="nav-item col-4">
                 <a class="nav-link p-0" href="#">
-                  <div class="col-12 col-lg-12 p-0">
+                  <div class="p-0" style="max-width:70px">
                     <img src="/pic/logo-遇見幸福(圓形).png" alt="..." width="100%">
                   </div>
                   <h6 class="text-center">中式料理</h6>
@@ -147,7 +151,7 @@
               </li>
               <li class="nav-item col-4">
                   <a class="nav-link p-0" href="#">
-                    <div class="col-12 col-lg-12 p-0">
+                    <div class="p-0" style="max-width:70px">
                       <img src="/pic/logo-遇見幸福(圓形).png" alt="..." width="100%">
                     </div>
                     <h6 class="text-center">中式料理</h6>
@@ -155,7 +159,7 @@
                 </li>
                 <li class="nav-item col-4">
                     <a class="nav-link p-0" href="#">
-                      <div class="col-12 col-lg-12 p-0">
+                      <div class="p-0" style="max-width:70px">
                         <img src="/pic/logo-遇見幸福(圓形).png" alt="..." width="100%">
                       </div>
                       <h6 class="text-center">中式料理</h6>
@@ -174,7 +178,7 @@
 
 
   <div id="main">
-    <section>
+    <section id="section1">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -215,7 +219,7 @@
           </div>
         </div>
     </section>
-    <section>
+    <section id="section2">
       <div class="container">
         <div class="row">
           <div class="col-8"></div>
@@ -231,9 +235,14 @@
             </div>
       </div>
     </section>
-    <section>
+    <section id="section3">
 
     </section>
+    
+    <section id="section4">
+
+    </section>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -263,6 +272,21 @@
         </div>
       </div>
     </footer>
+    <div id="backtop">
+      <a href="#banner">
+      <img src="/pic/logo-遇見幸福(圓形).png" alt="" width="70px">
+    </a>
+    </div>
+    <div class="nav2">
+      <a href="#banner"><div class="nav2_btn mb-2"></div></a>
+      <a href="#section1"><div class="nav2_btn mb-2"></div></a>
+      <a href="#section2"><div class="nav2_btn mb-2"></div></a>
+      <a href="#section3"><div class="nav2_btn mb-2"></div></a>
+      <a href="#section4"><div class="nav2_btn mb-2"></div></a>
+      <a href="#section5"><div class="nav2_btn mb-2"></div></a>
+      
+
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
