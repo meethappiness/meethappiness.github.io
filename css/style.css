@@ -76,12 +76,14 @@ html {
     position: fixed;
     bottom: 32px;
     right: 32px;
+    z-index: 99;
 }
 
 .nav2 {
     position: fixed;
     right: 50px;
     top: calc(50vh - 60px);
+    z-index: 99;
 }
 
 .nav2_btn {
