@@ -39,9 +39,6 @@ html {
     height: 470px;
     background-size: cover;
     background-position: center;
-}
-
-.swiper-container {
     z-index: 1;
 }
 
