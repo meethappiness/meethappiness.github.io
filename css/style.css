@@ -32,7 +32,8 @@ body{
 .embFont01 {
     font-family: “文鼎明體”;
     font-size: 18px;
-    color: #78C3B7
+    color: #78C3B7;
+    -webkit-text-fill-color: #78C3B7;
 }
 
 #banner {
