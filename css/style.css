@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 768px) {
     #nav1 {
-        position: -webkit-sticky;
+        -webkit-position: sticky;
         position: sticky;
         z-index: 99;
         top:0;
@@ -32,6 +32,7 @@ body{
 .embFont01 {
     font-family: “文鼎明體”;
     font-size: 18px;
+    color: #78C3B7
 }
 
 #banner {
