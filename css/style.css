@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 768px) {
     #nav1 {
-        -webkit-position: sticky;
+        position: -webkit-sticky;
         position: sticky;
         z-index: 99;
         top:0;
