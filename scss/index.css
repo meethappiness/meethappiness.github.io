@@ -1,0 +1,39 @@
+.obj1 {
+  position: relative;
+  margin: 80px 0;
+  height: 500px;
+  background-color: #fff;
+}
+
+.obj1 .obj_ch1 {
+  width: 600px;
+  background-color: aquamarine;
+  position: absolute;
+  height: 284px;
+  right: 0;
+}
+
+.obj1 .obj_ch2 {
+  width: 500px;
+  background-color: #367e66;
+  float: right;
+  position: absolute;
+  height: 284px;
+  top: 70px;
+  right: 200px;
+}
+
+.obj1 .obj_ch3 {
+  width: 170px;
+  background-color: #29493e;
+  float: right;
+  position: absolute;  
+  height: 284px;
+  right: 130px;
+  top: 200px;
+}
+
+.obj1 .obj_ch3::after {
+  clear: both;
+}
+/*# sourceMappingURL=index.css.map */

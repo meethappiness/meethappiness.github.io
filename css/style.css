@@ -1,6 +1,6 @@
 @font-face {
     font-family: “文鼎明體”;
-    src: url(/ARMingB5Heavy.otf);
+    src: url(/webfonts/ARMingB5Heavy.otf);
 }
 .h1{
     font-size: 48px;
@@ -89,7 +89,7 @@ body{
 
 #section2,
 #section4 {
-    height: 100vh;
+    
     background-color: #999;
 }
 

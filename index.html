@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<link rel="stylesheet" href="/css/all.min.css">
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/scss/index.css">
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -103,8 +104,6 @@
 	<!-- nav 第二版 -->
 	<nav id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
 		<div class="container justify-content-md-center">
-
-
 			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,7 +117,7 @@
 					<li class="nav-item col-4">
 						<a class="nav-link p-0 " href="#">
 							<div class="p-0 m-auto" style="max-width:100px">
-								<img src="/pic/navicon/2019-07-26-NAV Icon-01.png" alt="..." width="100%">
+								<img src="/pic/navicon/2019-07-26-NAV Icon-01.png" alt="入園資訊" width="100%">
 							</div>
 							<h6 class="text-center embFont01 mt-2">入園資訊</h6>
 						</a>
@@ -126,7 +125,7 @@
 					<li class="nav-item col-4">
 						<a class="nav-link p-0 " href="#">
 							<div class="p-0 m-auto" style="max-width:100px">
-								<img src="/pic/navicon/2019-07-26-NAV Icon-02.png" alt="..." width="100%">
+								<img src="/pic/navicon/2019-07-26-NAV Icon-02.png" alt="園區設施" width="100%">
 							</div>
 							<h6 class="text-center embFont01 mt-2">園區設施</h6>
 						</a>
@@ -134,23 +133,28 @@
 					<li class="nav-item col-4">
 						<a class="nav-link p-0 " href="#">
 							<div class="p-0 m-auto" style="max-width:100px">
-								<img src="/pic/navicon/2019-07-26-NAV Icon-03.png" alt="..." width="100%">
+								<img src="/pic/navicon/2019-07-26-NAV Icon-03.png" alt="餐飲美饌" width="100%">
 							</div>
 							<h6 class="text-center embFont01 mt-2">餐飲美饌</h6>
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="col-2 col-md-2 order-0 order-md-1">
-				<a class="navbar-brand" href="#"><img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福"
-						style="width: 100%"></a>
+			<div class="col-3 col-md-2 order-0 order-md-1">
+				<div class="p-0 m-auto" style="max-width:150px">
+
+					<a class="navbar-brand p-0 m-auto" href="/index.html">
+						<img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" width="100%">
+
+					</a>
+				</div>
 			</div>
 			<div class="col-12 col-md-5 col-lg-4 p-0 collapse navbar-collapse order-2" id="navbarSupportedContent">
 				<ul class="nav mr-0">
 					<li class="nav-item col-4">
 						<a class="nav-link p-0 " href="#">
 							<div class="p-0 m-auto" style="max-width:100px">
-								<img src="/pic/navicon/2019-07-26-NAV Icon-04.png" alt="..." width="100%">
+								<img src="/pic/navicon/2019-07-26-NAV Icon-04.png" alt="舞蝶館" width="100%">
 							</div>
 							<h6 class="text-center embFont01 mt-2">舞蝶館</h6>
 						</a>
@@ -158,7 +162,7 @@
 					<li class="nav-item col-4">
 						<a class="nav-link p-0 " href="#">
 							<div class="p-0 m-auto" style="max-width:100px">
-								<img src="/pic/navicon/2019-07-26-NAV Icon-05.png" alt="..." width="100%">
+								<img src="/pic/navicon/2019-07-26-NAV Icon-05.png" alt="婚禮儀式" width="100%">
 							</div>
 							<h6 class="text-center embFont01 mt-2">婚禮儀式</h6>
 						</a>
@@ -166,7 +170,7 @@
 					<li class="nav-item col-4">
 						<a class="nav-link p-0 " href="#">
 							<div class="p-0 m-auto" style="max-width:100px">
-								<img src="/pic/navicon/2019-07-26-NAV Icon-06.png" alt="..." width="100%">
+								<img src="/pic/navicon/2019-07-26-NAV Icon-06.png" alt="園區服務" width="100%">
 							</div>
 							<h6 class="text-center embFont01 mt-2">園區服務</h6>
 						</a>
@@ -188,7 +192,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="swiper-container">
+					<div class="swiper-container s1">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 1</div>
@@ -240,8 +244,14 @@
 		<section id="section2">
 			<div class="container">
 				<div class="row">
-					<div class="col-8"></div>
-					<div class="col-4"></div>
+					<div class="col-12 col-md-7">
+						<div class="obj1 clearfix">
+							<div class="obj_ch1"></div>
+							<div class="obj_ch2"></div>
+							<div class="obj_ch3"></div>
+						</div>
+					</div>
+					<div class="col-5"></div>
 				</div>
 				<div class="row">
 					<div class="col-4"></div>
@@ -249,22 +259,80 @@
 				</div>
 				<div class="row">
 					<div class="col-8">
-						<div col-5>
+						<!-- <div col-5>
 							<video width="100%" src="video/Engaged Couple Holding Hands.mp4" type="video/mp4"
 								frameborder="0" allowfullscreen autoplay loop muted></video></div>
-						<div class="col-4"></div>
+						<div class="col-4"></div> -->
 					</div>
 				</div>
 		</section>
 		<section id="section3">
+			<div class="container">
+				<div class="row ">
+					<div class="col align-content-center">
+						<div>
+							<h1 class="h1">
+								婚禮服務
+							</h1>
+							<p>你心動了嗎？快到幸福小窩洽談室，與我們分享你的結婚計畫吧！</p>
+							<div>
+								<a href="">
+									<div>
+										<h2 class="h2">預約參觀</h2>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section4">
+			<div style="padding: 100px 0">
+				<div id="swiper2" class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 1</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test2.jpg)">Slide 2</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test3.jpg)">Slide 3</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 4</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test2.jpg)">Slide 5</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test3.jpg)">Slide 6</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 7</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test2.jpg)">Slide 8</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test3.jpg)">Slide 9</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 10</div>0
+						</div>
+					</div>
+					<!-- Add Pagination -->
+					<!-- <div class="swiper-pagination"></div> -->
+				</div>
+			</div>
+
+		</section>
 
 	</div>
 
-	</section>
 
-	<section id="section4">
-
-	</section>
 
 	<footer>
 		<div class="container">
@@ -316,17 +384,17 @@
 
 				</div>
 			</div>
-			
+
 		</div>
 		<div class="container-fluid" style="background-color: #003A3E">
-				<div class="row">
-					<div class="col">
-						<div class="text-center">
-							<p class="text-center m-3 text-white">本網頁僅用於教學用途，如有侵權，在通知以下信箱。</p>
-						</div>
+			<div class="row">
+				<div class="col">
+					<div class="text-center">
+						<p class="text-center m-3 text-white">本網頁僅用於教學用途，如有侵權，在通知以下信箱。</p>
 					</div>
 				</div>
 			</div>
+		</div>
 	</footer>
 
 	<div id="backtop">
@@ -369,7 +437,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 	<script>
-		var swiper = new Swiper('.swiper-container', {
+		var swiper = new Swiper('.swiper-container.s1', {
 			slidesPerView: 1,
 			spaceBetween: 30,
 			loop: true,
@@ -382,7 +450,30 @@
 				prevEl: '.swiper-button-prev',
 			},
 		});
-
+		var mySwiper = new Swiper('#swiper2', {
+			autoplay: {
+				delay: 0,
+				disableOnInteraction: false,
+			},
+			speed: 3000,
+			slidesPerView: 3,
+			spaceBetween: 30,
+			grabCursor: true,
+			freeMode: true,
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+		
+		$(".swiper-container").hover(function () {
+			console.log("in"),
+			mySwiper.autoplay.stop();
+		}, function () {
+			mySwiper.autoplay.start();
+		});
+	
 
 		var tl = new TimelineMax({
 			repeat: -1,

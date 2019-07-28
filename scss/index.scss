@@ -1,0 +1,34 @@
+.obj1 {
+    position: relative;
+    padding-top: 80px;
+    background-color: #fff;
+    .obj_ch1 {
+        width: 600px;
+        background-color: aquamarine;
+        position: absolute;
+        height: 284px;
+        right: 0
+        ;
+    }
+    .obj_ch2 {
+        width: 500px;
+        background-color: rgb(54, 126, 102);
+        position: absolute;
+        height: 284px;
+        top:150px;
+        right:200px ;
+    }
+    .obj_ch3{
+        width: 170px;
+        background-color: rgb(41, 73, 62);
+        position: absolute;
+        height: 284px;
+        right: 130px;
+        top:300px;
+        &::after{
+            clear: both;
+
+        }
+    }
+
+}
