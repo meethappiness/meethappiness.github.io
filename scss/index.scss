@@ -2,10 +2,12 @@
     position: relative;
     padding-top: 80px;
     background-color: #fff;
+    // height: 500px;
     .obj_ch1 {
+        margin: 0 0 0 auto;
         width: 600px;
         background-color: aquamarine;
-        position: absolute;
+        // position: absolute;
         height: 284px;
         right: 0
         ;
@@ -31,4 +33,12 @@
         }
     }
 
+}
+#section3{
+    .container{
+        height: 100%;
+        .row{
+            height: 100%;
+        }
+    }
 }

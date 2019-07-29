@@ -1,14 +1,14 @@
 .obj1 {
   position: relative;
-  margin: 80px 0;
-  height: 500px;
+  padding-top: 80px;
+  padding-bottom: 300px;
   background-color: #fff;
 }
 
 .obj1 .obj_ch1 {
-  width: 600px;
+  margin: 0 0 0 auto;
+  max-width: 600px;
   background-color: aquamarine;
-  position: absolute;
   height: 284px;
   right: 0;
 }
@@ -16,24 +16,30 @@
 .obj1 .obj_ch2 {
   width: 500px;
   background-color: #367e66;
-  float: right;
   position: absolute;
   height: 284px;
-  top: 70px;
+  top: 150px;
   right: 200px;
 }
 
 .obj1 .obj_ch3 {
   width: 170px;
   background-color: #29493e;
-  float: right;
-  position: absolute;  
+  position: absolute;
   height: 284px;
   right: 130px;
-  top: 200px;
+  top: 300px;
 }
 
 .obj1 .obj_ch3::after {
   clear: both;
+}
+
+#section3 .container {
+  height: 100%;
+}
+
+#section3 .container .row {
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */

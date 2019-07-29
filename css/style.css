@@ -93,9 +93,8 @@ body{
     background-color: #999;
 }
 
-#section3,
-#section5 {
-    height: 100vh;
+#section3{
+    height: 540px;
     background-color: #bbb;
 }
 
