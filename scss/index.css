@@ -42,4 +42,13 @@
 #section3 .container .row {
   height: 100%;
 }
+
+@media screen and (max-width:750px) {
+    a.btn.btn-primary{
+      position: absolute;
+      top: 500px;
+      left: 50%;
+      transform: translatex(-50%);
+  }
+}
 /*# sourceMappingURL=index.css.map */

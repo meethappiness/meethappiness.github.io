@@ -1,0 +1,75 @@
+<!-- 第一版NAVBAR HOLD -->
+	<!-- <nav class="nav justify-content-center ">
+    <a class="nav-link active order-md-2 " href="#">
+      <img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" style="width: 120px">
+    </a>
+    <ul class="nav justify-content-around order-1 a align-items-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div style="width: 70px;">
+            <img src="/pic/logo-遇見幸福(圓形).png" class="card-img-top" alt="...">
+            <div>
+              <h6 class="text-center">中式料理</h6>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div style="width: 70px;">
+            <img src="/pic/logo-遇見幸福(圓形).png" class="card-img-top" alt="...">
+            <div>
+              <h6 class="text-center">中式料理</h6>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div style="width: 70px;">
+            <img src="/pic/logo-遇見幸福(圓形).png" class="card-img-top" alt="...">
+            <div>
+              <h6 class="text-center">中式料理</h6>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <a class="nav-link active order-sm-0 order-2" href="#">
+      <img src="/pic/logo-遇見幸福(圓形).png" alt="logo-遇見幸福" style="width: 120px">
+    </a> 
+
+    <ul class="nav justify-content-center order-3 align-items-end">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div style="width: 70px;">
+            <img src="/pic/logo-遇見幸福(圓形).png" class="card-img-top" alt="...">
+            <div>
+              <h6 class="text-center">中式料理</h6>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div style="width: 70px;">
+            <img src="/pic/logo-遇見幸福(圓形).png" class="card-img-top" alt="...">
+            <div>
+              <h6 class="text-center embFont01">中式料理</h6>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div style="width: 70px;">
+            <img src="/pic/logo-遇見幸福(圓形).png" class="card-img-top" alt="...">
+            <div>
+              <h6 class="text-center">中式料理</h6>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav> -->
