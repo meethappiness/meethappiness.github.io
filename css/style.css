@@ -27,6 +27,7 @@ html {
 
 body{
     position: relative;
+    font-family: "微軟正黑體",sans-serif
 }
 
 .embFont01 {
@@ -90,7 +91,7 @@ body{
 #section2,
 #section4 {
     
-    background-color: #999;
+    /* background-color: #999; */
 }
 
 #section3{
@@ -126,4 +127,18 @@ body{
 
 .nav2 .nav-link.active .nav2_btn{
     background-color: #000;
+}
+#myContainer {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /*this gives it the precise width to match the Bootstrap defaults*/
+}
+
+
+@media (max-width: 1200px) {
+    #myContainer {
+        width: 97.5%;
+        /*this gives it the precise width to match the Bootstrap defaults*/
+    }
 }

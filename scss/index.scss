@@ -2,7 +2,7 @@
     position: relative;
     padding-top: 80px;
     padding-bottom: 50px;
-    background-color: #fff;
+    // background-color: #fff;
     // height: 500px;
     @media screen and(min-width:768px){
         padding-bottom: 250px;
@@ -12,14 +12,14 @@
         max-width: 600px;
         background-color: aquamarine;
         // position: absolute;
-        height: 284px;
+        // height: 284px;
         right: 0;
     }
     .obj_ch2 {
         width: 500px;
         background-color: rgb(54, 126, 102);
         position: absolute;
-        height: 284px;
+        // height: 284px;
         top:150px;
         right:200px ;
     }
@@ -27,7 +27,7 @@
         width: 170px;
         background-color: rgb(41, 73, 62);
         position: absolute;
-        height: 284px;
+        // height: 284px;
         right: 130px;
         top:300px;
     }
@@ -50,3 +50,5 @@
       left: 50%;
       transform: translatex(-50%);
   }}
+
+

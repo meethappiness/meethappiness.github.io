@@ -2,7 +2,6 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 50px;
-  background-color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -15,7 +14,6 @@
   margin: 0 0 0 auto;
   max-width: 600px;
   background-color: aquamarine;
-  height: 284px;
   right: 0;
 }
 
@@ -23,7 +21,6 @@
   width: 500px;
   background-color: #367e66;
   position: absolute;
-  height: 284px;
   top: 150px;
   right: 200px;
 }
@@ -32,7 +29,6 @@
   width: 170px;
   background-color: #29493e;
   position: absolute;
-  height: 284px;
   right: 130px;
   top: 300px;
 }

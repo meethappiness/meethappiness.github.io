@@ -1,0 +1,13 @@
+#backgrand1{
+    width: 1300px;
+    height: 720px;
+    position: absolute;
+    background-color: #ddd;
+    z-index: -1;
+    left: 17%;
+    bottom: 190px;
+    @media screen and(max-width:768){
+        width: 100%;
+        left: 0%;
+    }
+}
