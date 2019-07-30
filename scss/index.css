@@ -1,8 +1,14 @@
 .obj1 {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 300px;
+  padding-bottom: 50px;
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .obj1 {
+    padding-bottom: 250px;
+  }
 }
 
 .obj1 .obj_ch1 {
@@ -31,10 +37,6 @@
   top: 300px;
 }
 
-.obj1 .obj_ch3::after {
-  clear: both;
-}
-
 #section3 .container {
   height: 100%;
 }
@@ -43,12 +45,13 @@
   height: 100%;
 }
 
-@media screen and (max-width:750px) {
-    a.btn.btn-primary{
-      position: absolute;
-      top: 500px;
-      left: 50%;
-      transform: translatex(-50%);
+@media screen and (max-width: 768px) {
+  a.btn.btn-primary {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
   }
 }
 /*# sourceMappingURL=index.css.map */
