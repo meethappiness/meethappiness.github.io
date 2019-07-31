@@ -11,7 +11,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 580px;
+    width: 800px;
+    height: 500px;
   }
 }
 
@@ -21,7 +22,7 @@
 
 @media screen and (min-width: 768px) {
   .content_L .text {
-    padding-top: 400px;
+    padding-top: 550px;
   }
 }
 
@@ -38,7 +39,8 @@
     position: absolute;
     top: 200px;
     left: 0;
-    width: 580px;
+    width: 800px;
+    height: 500px;
   }
 }
 

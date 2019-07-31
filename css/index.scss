@@ -32,7 +32,103 @@
         top:300px;
     }
 }
-
+.obj2 {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    // background-color: #fff;
+    // height: 500px;
+    @media screen and(min-width:768px){
+        padding-bottom: 250px;
+    }
+    .obj_ch1 {
+        margin: 0 auto 0 0;
+        max-width: 470px;
+        background-color: aquamarine;
+        // position: absolute;
+        // height: 284px;
+        left: 0;
+    }
+    .obj_ch2 {
+        width: 670px;
+        background-color: rgb(54, 126, 102);
+        position: absolute;
+        // height: 284px;
+        top:200px;
+        left:-80px ;
+    }
+}
+.obj3 {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    // background-color: #fff;
+    // height: 500px;
+    @media screen and(min-width:768px){
+        padding-bottom: 250px;
+    }
+    .obj_ch1 {
+        margin: 0 0 0 auto;
+        max-width: 600px;
+        background-color: aquamarine;
+        // position: absolute;
+        // height: 284px;
+        right: 0;
+    }
+    .obj_ch2 {
+        width: 500px;
+        background-color: rgb(54, 126, 102);
+        position: absolute;
+        // height: 284px;
+        top:200px;
+        right:100px ;
+    }
+    .obj_ch3{
+        width: 170px;
+        background-color: rgb(41, 73, 62);
+        position: absolute;
+        // height: 284px;
+        left: 0;
+        top:200px;
+    }
+}
+.obj4 {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    // background-color: #fff;
+    // height: 500px;
+    @media screen and(min-width:768px){
+        padding-bottom: 250px;
+    }
+    .obj_ch1 {
+        margin: 0 auto;
+        max-width: 470px;
+        background-color: aquamarine;
+        // position: absolute;
+        // height: 284px;
+        right: 0;
+    }
+    .obj_ch2 {
+        width: 570px;
+        background-color: rgb(54, 126, 102);
+        position: absolute;
+        // height: 284px;
+        top:220px;
+        left: -100px;
+    }
+    .obj_ch3{
+        width: 170px;
+        background-color: rgb(41, 73, 62);
+        position: absolute;
+        // height: 284px;
+        right:0px ;        
+        top:200px;
+    }
+}
+.swiper-slide .p-3{
+    background-color: #ddd;
+}
 
 #section3{
     .container{
@@ -52,3 +148,8 @@
   }}
 
 
+video{
+    position: absolute;
+    z-index: -1;
+    top:-150px;
+}
