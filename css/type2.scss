@@ -1,15 +1,38 @@
-#backgrand1{
-    width: 1300px;
-    height: 720px;
-    position: absolute;
-    background-color: #ddd;
-    z-index: -1;
-    left: 17%;
-    bottom: 190px;
-    @media screen and(max-width:768px){
+.content_L{
+    position: relative;
+    .img{
         width: 100%;
-        left: 0%;
+        @media screen and(min-width:768px){
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 580px;
+            
+        };
+
     }
+    .text{
+        margin: 0;
+        @media screen and(min-width:768px){
+            padding-top: 400px;
+        }
+
+    }
+}
+.content_R{
+    position: relative;
+    .img{
+        width: 100%;
+        @media screen and(min-width:768px){
+            position: absolute;
+            top:200px;
+            left: 0;
+            width: 580px;
+            
+        };
+
+    }
+    
 }
 .border_outside{
     padding-bottom: 120px;

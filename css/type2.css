@@ -1,17 +1,44 @@
-#backgrand1 {
-  width: 1300px;
-  height: 720px;
-  position: absolute;
-  background-color: #ddd;
-  z-index: -1;
-  left: 17%;
-  bottom: 190px;
+.content_L {
+  position: relative;
 }
 
-@media screen and (max-width: 768px) {
-  #backgrand1 {
-    width: 100%;
-    left: 0%;
+.content_L .img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .content_L .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 580px;
+  }
+}
+
+.content_L .text {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .content_L .text {
+    padding-top: 400px;
+  }
+}
+
+.content_R {
+  position: relative;
+}
+
+.content_R .img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .content_R .img {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 580px;
   }
 }
 
@@ -55,4 +82,4 @@
     top: 45px;
   }
 }
-/*# sourceMappingURL=type1.css.map */
+/*# sourceMappingURL=type2.css.map */
