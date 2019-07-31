@@ -504,28 +504,19 @@
 		});
 
 
-		var tl = new TimelineMax({
-			repeat: -1,
-			delay: 2
+		$(document).ready(function () {
+			$('body').css('display', 'none'); //直接寫在css較佳
+			$('body').fadeIn(1000); //一開始淡入
+			$('a.link').click(function (event) { //點選 class 為 link 的 a 元件時觸發
+				event.preventDefault(); //取消事件預設動作
+				newLocation = this.href;
+				$('body').fadeOut(1000, newpage); //點選後淡出
+			});
+
+			function newpage() {
+				window.location = newLocation;
+			}
 		});
-		tl.add(TweenLite.to('#test3', 3, {
-			y: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test3', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test2', 3, {
-			x: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test2', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test1', 3, {
-			scale: 1.2,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test1', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
 	</script>
 
 
