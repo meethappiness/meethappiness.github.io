@@ -178,16 +178,16 @@
 		</section>
 		<section id="section2">
 			<div class="container">
-				<div class="row">
+				<div class="row product js-motion ">
 					<div class="col-12 col-md-7 order-1">
-						<div class="obj1">
-							<div class="obj_ch1 " style="background-color: none">
+						<div class="obj1 product__image">
+							<div class="_object1 " style="background-color: none">
 								<img src="/pic//index/access/access-02.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch2  d-none d-md-block" style="z-index:-1">
+							<div class="_object2  d-none d-md-block" style="z-index:-1">
 								<img src="/pic//index/access/access-03.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch3  d-none d-md-block">
+							<div class="_object3  d-none d-md-block">
 								<img src="/pic//index/access/access-01.jpg" alt="" width="100%">
 							</div>
 						</div>
@@ -208,13 +208,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row product js-motion">
 					<div class="col-12 col-md-6 order-1">
-						<div class="obj2">
-							<div class="obj_ch1" style="background-color: none">
+						<div class="obj2 product__image">
+							<div class="_object1" style="background-color: none">
 								<img src="/pic/index/scenery/scenery-01.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch2 d-none d-md-block" style="z-index:-1">
+							<div class="_object2 d-none d-md-block" style="z-index:-1">
 								<img src="/pic/index/scenery/scenery-02.jpg" alt="" width="100%">
 							</div>
 
@@ -236,16 +236,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row product js-motion">
 					<div class="col-12 col-md-7 order-1">
-						<div class="obj3">
-							<div class="obj_ch1 " style="background-color: none">
+						<div class="obj3 product__image">
+							<div class="_object1 " style="background-color: none">
 								<img src="/pic/index/food/food-02.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch2  d-none d-md-block" style="z-index:-1">
+							<div class="_object2  d-none d-md-block" style="z-index:-1">
 								<img src="/pic/index/food/food-03.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch3  d-none d-md-block">
+							<div class="_object3  d-none d-md-block">
 								<img src="/pic/index/food/food-01.jpg" alt="" width="100%">
 							</div>
 						</div>
@@ -266,16 +266,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row product js-motion">
 					<div class="col-12 col-md-6 order-1">
-						<div class="obj4">
-							<div class="obj_ch1 " style="background-color: none">
+						<div class="obj4 product__image">
+							<div class="_object1 " style="background-color: none">
 								<img src="/pic/index/villa/villa-02.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch2  d-none d-md-block" style="z-index:-1">
+							<div class="_object2  d-none d-md-block" style="z-index:-1">
 								<img src="/pic/index/villa/villa-03.jpg" alt="" width="100%">
 							</div>
-							<div class="obj_ch3  d-none d-md-block">
+							<div class="_object3  d-none d-md-block">
 								<img src="/pic/index/villa/villa-01.jpg" alt="" width="100%">
 							</div>
 						</div>
@@ -296,7 +296,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="row">
+				<!-- <div class="row product">
 					<div class="col-8">
 						<div col-5>
 							<video width="100%" src="video/Engaged Couple Holding Hands.mp4" type="video/mp4"
@@ -528,7 +528,7 @@
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
+	<script src="/js/jquery.inview.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container.s1', {
 			slidesPerView: 1,
@@ -590,6 +590,14 @@
 		tl.add(TweenLite.to('#test1', 1, {
 			opacity: 0
 		})); //将一个动画添加到时间轴末端，即与前一个动画接续
+
+		$('.js-motion').on('inview', function (event, isInView) {
+            if (isInView) {
+                $(this).addClass('is-active');
+            } else {
+                // element has gone out of viewport
+            }
+        });
 	</script>
 
 
