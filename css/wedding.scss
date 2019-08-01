@@ -1,0 +1,137 @@
+#section1 {
+    h1 {
+        margin-top: 2em;
+    }
+
+    p {
+        margin: 1em 0;
+    }
+
+    .vedio {
+        padding-bottom: 300px;
+    }
+}
+
+#section2 {
+    h1 {
+        padding-bottom: 40px;
+    }
+
+    p {
+        padding-bottom: 40px;
+        line-height: 30px;
+    }
+
+    .swiper-container.s1 {
+        padding: 40px 0;
+    }
+
+}
+
+#section3 {
+    padding: 120px 0;
+
+    .sample {
+        margin: 40px auto;
+        width: 34%;
+        height: 450px;
+        background-color: #ddd;
+    }
+
+}
+
+#section4 {
+    padding-bottom: 50px;
+    h1{
+        padding-bottom: 20px;
+    }
+    p{
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+
+    .content_L {
+        position: relative;
+
+        .img {
+            width: 100%;
+            margin-bottom: 40px;
+
+            @media screen and(min-width:768px) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 850px;
+                height: 500px;
+            };
+        }
+
+        .text {
+            margin: 0;
+
+            @media screen and(min-width:768px) {
+                padding-top: 580px;
+            }
+        }
+    }
+
+    .content_R {
+        position: relative;
+
+        .img {
+            width: 100%;
+            margin-bottom: 40px;
+
+            @media screen and(min-width:768px) {
+                position: absolute;
+                top: 400px;
+                left: 0;
+                width: 850px;
+                height: 500px;
+
+            }
+
+            ;
+
+        }
+
+    }
+}
+
+.border_outside {
+    padding-bottom: 120px;
+
+    &::before {
+        content: "";
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0 45% 850px;
+        top: 30px;
+        position: absolute;
+        left: 15px;
+
+        @media screen and(max-width:768px) {
+            padding: 0 45% 850px;
+            right: 15px;
+        }
+    }
+
+    &::after {
+        content: "";
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0 45% 850px;
+        top: 50px;
+        position: absolute;
+        right: 15px;
+        z-index: -1;
+
+        @media screen and(max-width:768px) {
+            padding: 0 40% 820px;
+            left: 30px;
+            right: 30px;
+            top: 45px;
+
+        }
+    }
+}

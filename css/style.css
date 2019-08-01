@@ -13,6 +13,7 @@
 
 .h3 {
     font-size: 18px;
+    
 }
 .title_LH{
     line-height: 110px;
@@ -118,10 +119,7 @@ body {
 
 
 
-#section3 {
-    height: 540px;
-    
-}
+
 
 #backtop {
     position: fixed;
