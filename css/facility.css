@@ -95,6 +95,22 @@
   }
 }
 
+#section6 #backgrand1 {
+  width: 1300px;
+  height: 720px;
+  position: absolute;
+  background-color: #ee5858;
+  z-index: -1;
+  left: 17%;
+  bottom: 190px;
+}
+
+@media screen and (max-width: 768px) {
+  #section6 #backgrand1 {
+    width: 100%;
+    left: 0%;
+  }
+}
 
 .border_outside {
   padding-bottom: 120px;
