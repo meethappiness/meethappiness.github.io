@@ -355,6 +355,14 @@
 		}, function () {
 			mySwiper.autoplay.start();
 		});
+
+		$('.js-motion').on('inview', function (event, isInView) {
+            if (isInView) {
+                $(this).addClass('is-active');
+            } else {
+                // element has gone out of viewport
+            }
+        });
 	</script>
 
 

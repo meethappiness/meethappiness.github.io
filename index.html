@@ -308,12 +308,12 @@
 		<section id="section3">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col">
+					<div class="col position-relative">
 						<div class="vedio">
 							<video width="100%" src="video/2.mp4" type="video/mp4" frameborder="0" allowfullscreen
 								autoplay loop muted></video>
 						</div>
-						<div class="col-6 p-5 text-white">
+						<div class="col-12 col-md-6 p-5 text-white">
 							<h1 class="h1 text_shadow">
 								婚禮服務
 							</h1>
@@ -336,48 +336,48 @@
 				<div id="swiper2" class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-01.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-01.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-02.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-02.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-03.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-03.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-04.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-04.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-05.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-05.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-06.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-06.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-07.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-07.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-08.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-08.jpg" alt="" >
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="p-3" style="width: 570px">
-								<img src="/pic/index/wedding/wedding-09.jpg" alt="" width="100%">
+							<div class=" ">
+								<img src="/pic/index/wedding/wedding-09.jpg" alt="" >
 							</div>
 						</div>
 
@@ -544,60 +544,71 @@
 			},
 		});
 		var mySwiper = new Swiper('#swiper2', {
-			autoplay: {
-				delay: 0,
-				disableOnInteraction: false,
-			},
-			speed: 3000,
-			slidesPerView: 3,
-			spaceBetween: 30,
-			grabCursor: true,
-			freeMode: true,
-			loop: true,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-		});
+					autoplay: {
+						delay: 0,
+						disableOnInteraction: false,
+					},
+					speed: 3000,
+					slidesPerView: 3,
+					spaceBetween: 30,
+					grabCursor: true,
+					freeMode: true,
+					loop: true,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					breakpoints: {
+						//当宽度小于等于320
+						320: {
+							slidesPerView: 1,
+							spaceBetween: 10
+						},
+						//当宽度小于等于640
+						640: {
+							slidesPerView: 2,
+							spaceBetween: 20
+						}
+					},
+				});
 
-		$(".swiper-container").hover(function () {
-			console.log("in"),
-				mySwiper.autoplay.stop();
-		}, function () {
-			mySwiper.autoplay.start();
-		});
+				$(".swiper-container").hover(function () {
+					console.log("in"),
+						mySwiper.autoplay.stop();
+				}, function () {
+					mySwiper.autoplay.start();
+				});
 
 
-		var tl = new TimelineMax({
-			repeat: -1,
-			delay: 2
-		});
-		tl.add(TweenLite.to('#test3', 3, {
-			y: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test3', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test2', 3, {
-			x: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test2', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test1', 3, {
-			scale: 1.2,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test1', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
+				var tl = new TimelineMax({
+					repeat: -1,
+					delay: 2
+				}); tl.add(TweenLite.to('#test3', 3, {
+					y: -30,
+				})); //将一个动画添加到时间轴
+				tl.add(TweenLite.to('#test3', 1, {
+					opacity: 0
+				})); //将一个动画添加到时间轴末端，即与前一个动画接续
+				tl.add(TweenLite.to('#test2', 3, {
+					x: -30,
+				})); //将一个动画添加到时间轴
+				tl.add(TweenLite.to('#test2', 1, {
+					opacity: 0
+				})); //将一个动画添加到时间轴末端，即与前一个动画接续
+				tl.add(TweenLite.to('#test1', 3, {
+					scale: 1.2,
+				})); //将一个动画添加到时间轴
+				tl.add(TweenLite.to('#test1', 1, {
+					opacity: 0
+				})); //将一个动画添加到时间轴末端，即与前一个动画接续
 
-		$('.js-motion').on('inview', function (event, isInView) {
-            if (isInView) {
-                $(this).addClass('is-active');
-            } else {
-                // element has gone out of viewport
-            }
-        });
+				$('.js-motion').on('inview', function (event, isInView) {
+					if (isInView) {
+						$(this).addClass('is-active');
+					} else {
+						// element has gone out of viewport
+					}
+				});
 	</script>
 
 

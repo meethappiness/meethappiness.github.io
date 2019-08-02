@@ -1,4 +1,6 @@
-._object1{
+._object1,._object2,._object3{
+
+    img{border-radius: 10px;}
     
 }
 .obj1 {
@@ -127,9 +129,7 @@
         top:200px;
     }
 }
-.swiper-slide .p-3{
-    background-color: #ddd;
-}
+
 
 #section3{
     .container{
@@ -152,7 +152,7 @@
 video{
     position: absolute;
     z-index: -1;
-    top:-150px;
+    top:0px;
 }
 
 .product__image ._object1,
@@ -232,5 +232,10 @@ video{
     to {
         -webkit-transform: translateX(100%);
         transform: translateX(100%)
+    }
+}
+#section3{
+    .container{
+        overflow: hidden;
     }
 }
