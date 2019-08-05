@@ -23,6 +23,12 @@
   margin-bottom: 128px;
 }
 
+@media screen and (max-width: 992px) {
+  #section2 .col-10.sec2_text {
+    margin-bottom: 40px;
+  }
+}
+
 #section3 h1.h2 {
   margin-top: 40px;
 }
@@ -31,6 +37,16 @@
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 35px;
+}
+
+#section3 .container {
+  margin-bottom: 170px;
+}
+
+@media screen and (max-width: 992px) {
+  #section3 .container {
+    margin-bottom: 70px;
+  }
 }
 
 .border_outside {
