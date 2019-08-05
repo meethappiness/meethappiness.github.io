@@ -1,15 +1,33 @@
-._object1 img, ._object2 img, ._object3 img {
+section {
+  margin-bottom: 1.5rem;
+}
+
+#section1 .h1 {
+  margin: 1em 0;
+}
+
+#section1 .h2 {
+  margin-bottom: 1.5em;
+}
+
+#section1 .swiper-container.s1 {
+  margin-bottom: 1.5rem;
+}
+
+._object1 img,
+._object2 img,
+._object3 img {
   border-radius: 10px;
 }
 
 .obj1 {
   position: relative;
-  padding-top: 80px;
   padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .obj1 {
+    padding-top: 80px;
     padding-bottom: 250px;
   }
 }
@@ -37,13 +55,13 @@
 
 .obj2 {
   position: relative;
-  padding-top: 80px;
   padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .obj2 {
     padding-bottom: 250px;
+    padding-top: 80px;
   }
 }
 
@@ -63,13 +81,13 @@
 
 .obj3 {
   position: relative;
-  padding-top: 80px;
   padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .obj3 {
     padding-bottom: 250px;
+    padding-top: 80px;
   }
 }
 
@@ -96,13 +114,13 @@
 
 .obj4 {
   position: relative;
-  padding-top: 80px;
   padding-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
   .obj4 {
     padding-bottom: 250px;
+    padding-top: 80px;
   }
 }
 
@@ -138,7 +156,17 @@
 @media screen and (max-width: 768px) {
   a.btn.btn-primary {
     position: absolute;
-    top: 300px;
+    top: 200px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  a.btn.btn-primary {
+    position: absolute;
+    top: 150px;
     left: 50%;
     -webkit-transform: translatex(-50%);
             transform: translatex(-50%);

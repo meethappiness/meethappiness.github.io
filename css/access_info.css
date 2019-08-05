@@ -55,7 +55,7 @@
 
 .border_outside::before {
   content: "";
-  border: 1px solid black;
+  border: 1px solid #003A3E;
   border-radius: 10px;
   padding: 0 45% 650px;
   top: 30px;
@@ -72,7 +72,7 @@
 
 .border_outside::after {
   content: "";
-  border: 1px solid black;
+  border: 1px solid #003A3E;
   border-radius: 10px;
   padding: 0 45% 650px;
   top: 75px;
@@ -88,5 +88,12 @@
     right: 30px;
     top: 45px;
   }
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 /*# sourceMappingURL=access_info.css.map */
