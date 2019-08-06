@@ -1,4 +1,4 @@
-#section1 h1 {
+#section1 h1.h1 {
   margin-top: 2em;
 }
 
@@ -6,21 +6,17 @@
   margin: 1em 0;
 }
 
-#section1 .vedio {
-  padding-bottom: 300px;
-}
-
 #section2 h1 {
-  padding-bottom: 40px;
+  margin-top: 2em;
 }
 
 #section2 p {
-  padding-bottom: 40px;
+  padding-bottom: 1em;
   line-height: 30px;
 }
 
 #section2 .swiper-container.s1 {
-  padding: 40px 0;
+  padding-bottom: 2rem;
 }
 
 #section3 {
@@ -118,7 +114,7 @@
 
 .border_outside::before {
   content: "";
-  border: 1px solid black;
+  border: 1px solid #003A3E;
   border-radius: 10px;
   padding: 0 45% 850px;
   top: 30px;
@@ -135,7 +131,7 @@
 
 .border_outside::after {
   content: "";
-  border: 1px solid black;
+  border: 1px solid #003A3E;
   border-radius: 10px;
   padding: 0 45% 850px;
   top: 50px;

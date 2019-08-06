@@ -1,3 +1,6 @@
+section{
+    padding-bottom: 1.5rem; 
+}
 #backgrand1{
     width: 1300px;
     height: 720px;
@@ -11,13 +14,23 @@
         left: 0%;
     }
 }
+#section1{
+    .h1{
+        margin: 1em 0;
+    }
+    .h2{
+        margin-bottom: 1em;
+    }
+}
 #section2{
     .col.sec2_pic{
         margin-bottom: 40px;
     }
     .col-10.sec2_text{
         margin-bottom: 128px;
-
+        @media screen and (max-width:992px) {
+            margin-bottom: 40px;
+        }
     }
 }
     
@@ -30,12 +43,18 @@
         margin-bottom: 10px;
         line-height: 35px;
     }
+    .container{
+        margin-bottom: 170px;
+        @media screen and (max-width:992px){
+            margin-bottom: 70px;            
+        }
+    }
 }
 .border_outside{
     padding-bottom: 120px;
     &::before{
         content: "";
-        border: 1px solid black;
+        border: 1px solid #003A3E;
         border-radius: 10px;
         padding: 0 45% 650px;
         top:30px;
@@ -48,7 +67,7 @@
     }
     &::after{
         content: "";
-        border: 1px solid black;
+        border: 1px solid #003A3E;
         border-radius: 10px;
         padding: 0 45% 650px;
         top:75px;
@@ -60,7 +79,10 @@
             left: 30px;
             right: 30px;
             top:45px;
-            
         }
     }
 }
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+   }

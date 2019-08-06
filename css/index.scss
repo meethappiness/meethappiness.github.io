@@ -1,49 +1,76 @@
-._object1,._object2,._object3{
+section{margin-bottom: 1.5rem;}
+#section1 {
+    .h1 {
+        margin: 1em 0;
+    }
 
-    img{border-radius: 10px;}
-    
+    .h2 {
+        margin-bottom: 1.5em;
+    }
+    .swiper-container.s1{
+        margin-bottom: 1.5rem;
+    }
 }
+
+._object1,
+._object2,
+._object3 {
+
+    img {
+        border-radius: 10px;
+    }
+
+}
+
 .obj1 {
     position: relative;
-    padding-top: 80px;
     padding-bottom: 50px;
+
     // background-color: #fff;
     // height: 500px;
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) {
+        padding-top: 80px;
         padding-bottom: 250px;
     }
+
     ._object1 {
         margin: 0 0 0 auto;
         max-width: 600px;
         position: relative;
-        
+
         right: 0;
     }
+
     ._object2 {
         width: 500px;
-        
+
         position: absolute;
         // height: 284px;
-        top:150px;
-        right:200px ;
+        top: 150px;
+        right: 200px;
     }
-    ._object3{
+
+    ._object3 {
         width: 170px;
         position: absolute;
         // height: 284px;
         right: 130px;
-        top:300px;
+        top: 300px;
     }
 }
+
 .obj2 {
     position: relative;
-    padding-top: 80px;
+    
     padding-bottom: 50px;
+
     // background-color: #fff;
     // height: 500px;
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) {
         padding-bottom: 250px;
+        padding-top: 80px;
     }
+
     ._object1 {
         margin: 0 auto 0 0;
         max-width: 470px;
@@ -52,24 +79,29 @@
         // height: 284px;
         left: 0;
     }
+
     ._object2 {
         width: 670px;
         // background-color: rgb(54, 126, 102);
         position: absolute;
         // height: 284px;
-        top:200px;
-        left:-80px ;
+        top: 200px;
+        left: -80px;
     }
 }
+
 .obj3 {
     position: relative;
-    padding-top: 80px;
+    
     padding-bottom: 50px;
+
     // background-color: #fff;
     // height: 500px;
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) {
         padding-bottom: 250px;
+        padding-top: 80px;
     }
+
     ._object1 {
         margin: 0 0 0 auto;
         max-width: 600px;
@@ -78,32 +110,38 @@
         // height: 284px;
         right: 0;
     }
+
     ._object2 {
         width: 500px;
         // background-color: rgb(54, 126, 102);
         position: absolute;
         // height: 284px;
-        top:200px;
-        right:100px ;
+        top: 200px;
+        right: 100px;
     }
-    ._object3{
+
+    ._object3 {
         width: 170px;
         // background-color: rgb(41, 73, 62);
         position: absolute;
         // height: 284px;
         left: 0;
-        top:200px;
+        top: 200px;
     }
 }
+
 .obj4 {
     position: relative;
-    padding-top: 80px;
+    
     padding-bottom: 50px;
+
     // background-color: #fff;
     // height: 500px;
-    @media screen and(min-width:768px){
+    @media screen and(min-width:768px) {
         padding-bottom: 250px;
+        padding-top: 80px;
     }
+
     ._object1 {
         margin: 0 auto;
         max-width: 470px;
@@ -112,47 +150,64 @@
         // height: 284px;
         right: 0;
     }
+
     ._object2 {
         width: 570px;
         // background-color: rgb(54, 126, 102);
         position: absolute;
         // height: 284px;
-        top:220px;
+        top: 220px;
         left: -100px;
     }
-    ._object3{
+
+    ._object3 {
         width: 170px;
         // background-color: rgb(41, 73, 62);
         position: absolute;
         // height: 284px;
-        right:0px ;        
-        top:200px;
+        right: 0px;
+        top: 200px;
     }
 }
 
 
-#section3{
-    .container{
+#section3 {
+    .container {
         height: 100%;
-        .row{
+
+        .row {
             height: 100%;
         }
     }
 }
+
 @media screen and (max-width:768px) {
-    a.btn.btn-primary{
-      
-      position: absolute;
-      top: 300px;
-      left: 50%;
-      transform: translatex(-50%);
-  }}
+    a.btn.btn-primary {
+
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    #myScrollspy{
+        display: none !important;
+    }
+}
+@media screen and (max-width:400px) {
+    a.btn.btn-primary {
+
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
 
 
-video{
+video {
     position: absolute;
     z-index: -1;
-    top:0px;
+    top: 0px;
 }
 
 .product__image ._object1,
@@ -234,8 +289,9 @@ video{
         transform: translateX(100%)
     }
 }
-#section3{
-    .container{
+
+#section3 {
+    .container {
         overflow: hidden;
     }
 }
