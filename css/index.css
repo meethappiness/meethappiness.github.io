@@ -161,6 +161,9 @@ section {
     -webkit-transform: translatex(-50%);
             transform: translatex(-50%);
   }
+  #myScrollspy {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 400px) {

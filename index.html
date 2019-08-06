@@ -485,7 +485,7 @@
 		</a>
 	</div>
 
-	<div class="nav2 d-none d-md-block " id="myScrollspy">
+	<div class="nav2" id="myScrollspy">
 		<a class="nav-link " href="#banner">
 			<div class="nav2_btn mb-2"></div>
 		</a>
@@ -501,11 +501,8 @@
 		<a class="nav-link" href="#section4">
 			<div class="nav2_btn mb-2"></div>
 		</a>
-		<a class="nav-link" href="#section5">
-			<div class="nav2_btn mb-2"></div>
-		</a>
 	</div>
-	</div>
+	
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -537,71 +534,84 @@
 					},
 		});
 		var mySwiper = new Swiper('#swiper2', {
-					autoplay: {
-						delay: 0,
-						disableOnInteraction: false,
-					},
-					speed: 3000,
-					slidesPerView: 3,
-					spaceBetween: 30,
-					grabCursor: true,
-					freeMode: true,
-					loop: true,
-					pagination: {
-						el: '.swiper-pagination',
-						clickable: true,
-					},
-					breakpoints: {
-						//当宽度小于等于320
-						320: {
-							slidesPerView: 1,
-							spaceBetween: 10
-						},
-						//当宽度小于等于640
-						640: {
-							slidesPerView: 2,
-							spaceBetween: 20
-						}
-					},
-				});
+			autoplay: {
+				delay: 0,
+				disableOnInteraction: false,
+			},
+			speed: 3000,
+			slidesPerView: 3,
+			spaceBetween: 30,
+			grabCursor: true,
+			freeMode: true,
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			breakpoints: {
+				//当宽度小于等于320
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 10
+				},
+				//当宽度小于等于640
+				640: {
+					slidesPerView: 2,
+					spaceBetween: 20
+				}
+			},
+		});
 
-				$(".swiper-container").hover(function () {
-					console.log("in"),
-						mySwiper.autoplay.stop();
-				}, function () {
-					mySwiper.autoplay.start();
-				});
+		$(".swiper-container").hover(function () {
+			console.log("in"),
+				mySwiper.autoplay.stop();
+		}, function () {
+			mySwiper.autoplay.start();
+		});
 
 
-				var tl = new TimelineMax({
-					repeat: -1,
-					delay: 2
-				}); tl.add(TweenLite.to('#test3', 3, {
-					y: -30,
-				})); //将一个动画添加到时间轴
-				tl.add(TweenLite.to('#test3', 1, {
-					opacity: 0
-				})); //将一个动画添加到时间轴末端，即与前一个动画接续
-				tl.add(TweenLite.to('#test2', 3, {
-					x: -30,
-				})); //将一个动画添加到时间轴
-				tl.add(TweenLite.to('#test2', 1, {
-					opacity: 0
-				})); //将一个动画添加到时间轴末端，即与前一个动画接续
-				tl.add(TweenLite.to('#test1', 3, {
-					scale: 1.2,
-				})); //将一个动画添加到时间轴
-				tl.add(TweenLite.to('#test1', 1, {
-					opacity: 0
-				})); //将一个动画添加到时间轴末端，即与前一个动画接续
+		var tl = new TimelineMax({
+			repeat: -1,
+			delay: 2
+		}); tl.add(TweenLite.to('#test3', 3, {
+			y: -30,
+		})); //将一个动画添加到时间轴
+		tl.add(TweenLite.to('#test3', 1, {
+			opacity: 0
+		})); //将一个动画添加到时间轴末端，即与前一个动画接续
+		tl.add(TweenLite.to('#test2', 3, {
+			x: -30,
+		})); //将一个动画添加到时间轴
+		tl.add(TweenLite.to('#test2', 1, {
+			opacity: 0
+		})); //将一个动画添加到时间轴末端，即与前一个动画接续
+		tl.add(TweenLite.to('#test1', 3, {
+			scale: 1.2,
+		})); //将一个动画添加到时间轴
+		tl.add(TweenLite.to('#test1', 1, {
+			opacity: 0
+		})); //将一个动画添加到时间轴末端，即与前一个动画接续
 
-				$('.js-motion').on('inview', function (event, isInView) {
-					if (isInView) {
-						$(this).addClass('is-active');
-					} else {
-						// element has gone out of viewport
-					}
-				});
+		$('.js-motion').on('inview', function (event, isInView) {
+			if (isInView) {
+				$(this).addClass('is-active');
+			} else {
+				// element has gone out of viewport
+			}
+		});
+
+		$(document).ready(backtop);
+		$(window).scroll(backtop);
+		function backtop () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > $("#banner").height()) {
+				$("#backtop").show(),
+				$("#myScrollspy.nav2").show()
+			}
+			else{
+				$("#backtop").hide(),$("#myScrollspy.nav2").hide()
+			}
+		};
 	</script>
 
 

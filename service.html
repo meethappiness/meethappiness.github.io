@@ -32,7 +32,10 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 	園區服務
 	<!-- nav 第二版 -->
-	<nav id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
+	<nav id="nav1" class="p-0 d-block navbar navbar-expand-md navbar-light bg-light">
+			<div class="d-none d-md-block" style="margin: -2px">
+				<img src="/pic/navicon/navHeader.png" alt="" width="100%">
+			</div>
 		<div class="container justify-content-md-center">
 			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -394,6 +397,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 	<script>
+		
 		var swiper = new Swiper('.swiper-container.s1', {
 			slidesPerView: 1,
 			spaceBetween: 30,
@@ -432,28 +436,18 @@
 		});
 
 
-		var tl = new TimelineMax({
-			repeat: -1,
-			delay: 2
-		});
-		tl.add(TweenLite.to('#test3', 3, {
-			y: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test3', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test2', 3, {
-			x: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test2', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test1', 3, {
-			scale: 1.2,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test1', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
+		
+		$(document).ready(backtop);
+		$(window).scroll(backtop);
+		function backtop () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > $("#nav1").height()) {
+				$("#backtop").show()
+			}
+			else{
+				$("#backtop").hide()
+			}
+		};
 	</script>
 
 

@@ -31,7 +31,10 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 	<!-- nav 第二版 -->
-	<nav id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
+	<nav id="nav1" class="p-0 d-block navbar navbar-expand-md navbar-light bg-light">
+		<div class="d-none d-md-block" style="margin: -2px">
+			<img src="/pic/navicon/navHeader.png" alt="" width="100%">
+		</div>
 		<div class="container justify-content-md-center">
 			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -203,7 +206,8 @@
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-10 col-xl-6 col-lg-6 col-md-8">
-						<img src="/pic/wedding/2019-07-31-專題實作-團體專題 (遇見幸福)-Wireframe-婚禮儀式-直行文字-03.png" alt="" width="100%">
+						<img src="/pic/wedding/2019-07-31-專題實作-團體專題 (遇見幸福)-Wireframe-婚禮儀式-直行文字-03.png" alt=""
+							width="100%">
 					</div>
 				</div>
 			</div>
@@ -275,7 +279,7 @@
 										<div class="row justify-content-between pb-3">
 											<div class="col-12 col-md-6 col-lg-4 order-md-1 pb-3">
 												<div>
-													<img src="/pic/Sec1/q-image-01.jpg" alt="" width="100%">
+													<img src="/pic/wedding/service/01.jpg" alt="" width="100%">
 												</div>
 											</div>
 											<div class="col-12 col-md-6 col-xl-7">
@@ -288,39 +292,39 @@
 										<div class="row justify-content-between pb-3">
 											<div class="col-12 col-md-6 col-lg-4 order-md-1 pb-3">
 												<div>
-													<img src="/pic/Sec1/q-image-01.jpg" alt="" width="100%">
+													<img src="/pic/wedding/service/02.jpg" alt="" width="100%">
 												</div>
 											</div>
 											<div class="col-12 col-md-6 col-xl-7">
 												<h1 class="h2">婚禮主持</h1>
 												<p class="h3">
-														遇見幸福婚禮主持團隊，每位都是舞台上經驗豐富的專業人員，我們將藉由事前的溝通討論，瞭解新人心目中婚禮的想法，讓您婚禮當天有著流暢的節奏及溫馨的氣氛。
+													遇見幸福婚禮主持團隊，每位都是舞台上經驗豐富的專業人員，我們將藉由事前的溝通討論，瞭解新人心目中婚禮的想法，讓您婚禮當天有著流暢的節奏及溫馨的氣氛。
 												</p>
 											</div>
 										</div>
 										<div class="row justify-content-between pb-3">
 											<div class="col-12 col-md-6 col-lg-4 order-md-1 pb-3">
 												<div>
-													<img src="/pic/Sec1/q-image-01.jpg" alt="" width="100%">
+													<img src="/pic/wedding/service/03.jpg" alt="" width="100%">
 												</div>
 											</div>
 											<div class="col-12 col-md-6 col-xl-7">
 												<h1 class="h2">婚禮佈置</h1>
 												<p class="h3">
-														如果您是重視氛圍的新人，一定會想要多些浪漫與感動，讓人意想不到的創意設計，散發迷人的甜蜜氣息，在浪漫甜美的婚禮饗宴中倍增光彩，讓與會的貴賓們感受到您的用心。
+													如果您是重視氛圍的新人，一定會想要多些浪漫與感動，讓人意想不到的創意設計，散發迷人的甜蜜氣息，在浪漫甜美的婚禮饗宴中倍增光彩，讓與會的貴賓們感受到您的用心。
 												</p>
 											</div>
 										</div>
 										<div class="row justify-content-between pb-3">
 											<div class="col-12 col-md-6 col-lg-4 order-md-1 pb-3">
 												<div>
-													<img src="/pic/Sec1/q-image-01.jpg" alt="" width="100%">
+													<img src="/pic/wedding/service/04.jpg" alt="" width="100%">
 												</div>
 											</div>
 											<div class="col-12 col-md-6 col-xl-7">
 												<h1 class="h2">婚禮攝影</h1>
 												<p class="h3">
-														婚禮當天的一切，都將會是最美麗的回憶，透過專業婚禮攝影師的鏡頭，將您人生最重要的時刻，每個感動、溫馨、歡樂的氣氛完整紀錄，讓您能隨時回味幸福甜蜜的瞬間。
+													婚禮當天的一切，都將會是最美麗的回憶，透過專業婚禮攝影師的鏡頭，將您人生最重要的時刻，每個感動、溫馨、歡樂的氣氛完整紀錄，讓您能隨時回味幸福甜蜜的瞬間。
 												</p>
 											</div>
 										</div>
@@ -454,6 +458,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 	<script>
+		
 		var swiper = new Swiper('.swiper-container.s1', {
 			slidesPerView: 1,
 			spaceBetween: 30,
@@ -490,6 +495,18 @@
 		}, function () {
 			mySwiper.autoplay.start();
 		});
+
+		$(document).ready(backtop);
+		$(window).scroll(backtop);
+		function backtop () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > $("#nav1").height()) {
+				$("#backtop").show()
+			}
+			else{
+				$("#backtop").hide()
+			}
+		};
 	</script>
 
 

@@ -32,7 +32,10 @@
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
 	<!-- nav 第二版 -->
-	<nav id="nav1" class="navbar navbar-expand-md navbar-light bg-light">
+	<nav id="nav1" class="p-0 d-block navbar navbar-expand-md navbar-light bg-light">
+			<div class="d-none d-md-block" style="margin: -2px">
+				<img src="/pic/navicon/navHeader.png" alt="" width="100%">
+			</div>
 		<div class="container justify-content-md-center">
 			<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -322,6 +325,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 	<script>
+		
 		var swiper = new Swiper('.swiper-container.s1', {
 			slidesPerView: 1,
 			spaceBetween: 30,
@@ -448,6 +452,17 @@
 				map: map
 			});
 		}
+		$(document).ready(backtop);
+		$(window).scroll(backtop);
+		function backtop () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > $("#nav1").height()) {
+				$("#backtop").show()
+			}
+			else{
+				$("#backtop").hide()
+			}
+		};
 	</script>
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAewqTlA2lMjzPRrZkPT4NoMlBWvPY220&callback=initMap">

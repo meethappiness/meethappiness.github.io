@@ -189,6 +189,9 @@ section{margin-bottom: 1.5rem;}
         left: 50%;
         transform: translatex(-50%);
     }
+    #myScrollspy{
+        display: none !important;
+    }
 }
 @media screen and (max-width:400px) {
     a.btn.btn-primary {
