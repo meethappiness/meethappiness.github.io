@@ -182,7 +182,7 @@ hr{
 
 .v_text {
     -webkit-writing-mode: vertical-lr;
-    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
     font-family: "文鼎明體";
     line-height: unset;
     margin: auto ;
@@ -298,6 +298,6 @@ footer h3{
     font-size: 24px;
 
 }
-footer p{
-    /* font-size: 14px; */
-}
+/* footer p{
+    font-size: 14px;
+} */

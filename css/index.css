@@ -153,6 +153,21 @@ section {
   height: 100%;
 }
 
+#section3 .col-12.col-md-6.text-white {
+  padding: 150px 50px 50px;
+}
+
+@media screen and (max-width: 768px) {
+  #section3 .col-12.col-md-6.text-white {
+    padding: 50px 50px;
+  }
+}
+
+#section4 .swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 @media screen and (max-width: 768px) {
   a.btn.btn-primary {
     position: absolute;

@@ -150,41 +150,27 @@
 					<div class="swiper-container s1">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 1</div>
+								<div class="box m-auto" style="background-image: url(/pic/wedding/swiper/01.jpg)"></div>
 							</div>
 							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test2.jpg)">Slide 2</div>
+								<div class="box m-auto" style="background-image: url(/pic/wedding/swiper/02.jpg)"></div>
 							</div>
 							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test3.jpg)">Slide 3</div>
+								<div class="box m-auto" style="background-image: url(/pic/wedding/swiper/03.jpg)"></div>
 							</div>
 							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 4</div>
+								<div class="box m-auto" style="background-image: url(/pic/wedding/swiper/04.jpg)"></div>
 							</div>
 							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test2.jpg)">Slide 5</div>
+								<div class="box m-auto" style="background-image: url(/pic/wedding/swiper/05.jpg)"></div>
 							</div>
-							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test3.jpg)">Slide 6</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 7</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test2.jpg)">Slide 8</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test3.jpg)">Slide 9</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="box m-auto" style="background-image: url(/pic/test1.jpg)">Slide 10</div>0
-							</div>
+
 						</div>
 						<!-- Add Pagination -->
 						<!-- <div class="swiper-pagination"></div> -->
 						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next d-none d-md-block"></div>
+						<div class="swiper-button-prev d-none d-md-block"></div>
 					</div>
 				</div>
 				<div class="row justify-content-center">
@@ -201,13 +187,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<img src="/pic/11-5F唯朵Villa.jpg" alt="" width="100%" height="500px">
+						<div class="bgi" style="background-image: url(/pic/wedding/section3_pic.jpg)"></div>
+						<!-- <img src="/pic/wedding/section3_pic.jpg" alt="" width="100%" > -->
 					</div>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-10 col-xl-6 col-lg-6 col-md-8">
-						<img src="/pic/wedding/section3_text.png" alt=""
-							width="100%">
+						<img src="/pic/wedding/section3_text.png" alt="" width="100%">
 					</div>
 				</div>
 			</div>
@@ -458,7 +444,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
 	<script>
-		
 		var swiper = new Swiper('.swiper-container.s1', {
 			slidesPerView: 1,
 			spaceBetween: 30,
@@ -471,6 +456,10 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			autoplay: {
+						delay: 3000,
+						disableOnInteraction: false,
+					},
 		});
 		var mySwiper = new Swiper('#swiper2', {
 			autoplay: {
@@ -498,12 +487,12 @@
 
 		$(document).ready(backtop);
 		$(window).scroll(backtop);
-		function backtop () {
+
+		function backtop() {
 			var scrollTop = $(window).scrollTop();
 			if (scrollTop > $("#nav1").height()) {
 				$("#backtop").show()
-			}
-			else{
+			} else {
 				$("#backtop").hide()
 			}
 		};

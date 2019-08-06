@@ -30,6 +30,12 @@
   padding-bottom: 2rem;
 }
 
+#section3 .bgi {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
 #section4 {
   padding-bottom: 50px;
 }

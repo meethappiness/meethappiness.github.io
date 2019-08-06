@@ -91,11 +91,31 @@
   }
 }
 
+#section6 hr {
+  margin: 5px 0;
+}
+
+#section6 .text-card {
+  padding: 1rem;
+  margin-top: 670px;
+  background-color: rgba(255, 255, 255, 0.685);
+}
+
+@media screen and (max-width: 768px) {
+  #section6 .text-card {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #section6 .text-card {
+    margin-top: 150px;
+  }
+}
+
 #section6 #backgrand1 {
   width: 1300px;
-  height: 720px;
   position: absolute;
-  background-color: #ee5858;
   z-index: -1;
   left: 17%;
   bottom: 190px;
@@ -105,6 +125,7 @@
   #section6 #backgrand1 {
     width: 100%;
     left: 0%;
+    bottom: 100px;
   }
 }
 
