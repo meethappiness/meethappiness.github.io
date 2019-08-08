@@ -39,7 +39,7 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 	
-	<div class="banner">
+	<div id="banner" class="banner">
 		<div id="mainSlider" class="banImg"></div>
 		<img src="/pic/index/2019-07-26-Banner_title-01.png" alt="Banner_title">
 
@@ -299,7 +299,7 @@
 							</h1>
 							<p class="h2">輕輕踏上步道把所有煩惱都拋在這座海洋之外。</p>
 							<div>
-								<a class="btn btn-primary" href="#" role="button">
+								<a class="btn btn-primary" href="restaurant.html" role="button">
 									<div>
 										<h2 class="h2">閱讀更多</h2>
 									</div>
@@ -617,12 +617,13 @@
 		$(window).scroll(backtop);
 		function backtop () {
 			var scrollTop = $(window).scrollTop();
-			if (scrollTop > $("#banner").height()) {
+			if (scrollTop > $(".banner").height()) {
 				$("#backtop").show(),
 				$("#myScrollspy.nav2").show()
 			}
 			else{
-				$("#backtop").hide(),$("#myScrollspy.nav2").hide()
+				$("#backtop").hide(),
+				$("#myScrollspy.nav2").hide()
 			}
 		};
 	</script>
