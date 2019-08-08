@@ -12,9 +12,9 @@ function initTop() {
   $(window).scroll(function(){
     // setNav();
     if(winScrollTop > winH + 100) {
-      $('#main .banner').stop().animate({opacity: 0}, 50);
+      $('.banner').stop().animate({opacity: 0}, 50);
     } else {
-      $('#main .banner').stop().animate({opacity: 1}, 50);
+      $('.banner').stop().animate({opacity: 1}, 50);
     }
   }).trigger('scroll');
 
@@ -41,9 +41,11 @@ function initTop() {
 }
 
 function setBanner() {
-  var h = winH;
-  $('#main .banner, #mainSlider').height(h);
+  var h = $(window).height();
+  $('.banner, #mainSlider').height(h);
   // if(isiPad) $('#main .banner, #mainSlider').width(1150);
+  console.log(h);
+  
 }
 
 function initMainSlider() {
@@ -78,3 +80,8 @@ function before(i){
 }
 
 $(initTop);
+$(window).resize(function(){
+  setBanner();
+  ;
+  
+})

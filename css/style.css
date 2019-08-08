@@ -301,3 +301,19 @@ footer h3{
 /* footer p{
     font-size: 14px;
 } */
+.loading{
+    color:#003A3E;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0;
+    animation: blink 1.2s ease-in-out infinite alternate;
+    animation-delay:3s ;
+    /* display: inline-block; */
+    margin: 50px auto;
+}
+
+@keyframes blink {
+    50%{
+        opacity: 1;
+    }
+}

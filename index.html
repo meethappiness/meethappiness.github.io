@@ -583,27 +583,27 @@
 		});
 
 
-		var tl = new TimelineMax({
-			repeat: -1,
-			delay: 2
-		}); tl.add(TweenLite.to('#test3', 3, {
-			y: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test3', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test2', 3, {
-			x: -30,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test2', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
-		tl.add(TweenLite.to('#test1', 3, {
-			scale: 1.2,
-		})); //将一个动画添加到时间轴
-		tl.add(TweenLite.to('#test1', 1, {
-			opacity: 0
-		})); //将一个动画添加到时间轴末端，即与前一个动画接续
+		// var tl = new TimelineMax({
+		// 	repeat: -1,
+		// 	delay: 2
+		// }); tl.add(TweenLite.to('#test3', 3, {
+		// 	y: -30,
+		// })); //将一个动画添加到时间轴
+		// tl.add(TweenLite.to('#test3', 1, {
+		// 	opacity: 0
+		// })); //将一个动画添加到时间轴末端，即与前一个动画接续
+		// tl.add(TweenLite.to('#test2', 3, {
+		// 	x: -30,
+		// })); //将一个动画添加到时间轴
+		// tl.add(TweenLite.to('#test2', 1, {
+		// 	opacity: 0
+		// })); //将一个动画添加到时间轴末端，即与前一个动画接续
+		// tl.add(TweenLite.to('#test1', 3, {
+		// 	scale: 1.2,
+		// })); //将一个动画添加到时间轴
+		// tl.add(TweenLite.to('#test1', 1, {
+		// 	opacity: 0
+		// })); //将一个动画添加到时间轴末端，即与前一个动画接续
 
 		$('.js-motion').on('inview', function (event, isInView) {
 			if (isInView) {
